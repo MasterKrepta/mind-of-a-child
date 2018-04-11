@@ -6,7 +6,6 @@ public class EventManager : MonoBehaviour {
 
 
     public delegate void HealthEvents();
-    public static HealthEvents OnHealthChange;
     public static HealthEvents OnKilled;
 
     private Dictionary<string, List<Component>> Listeners = new Dictionary<string, List<Component>>();

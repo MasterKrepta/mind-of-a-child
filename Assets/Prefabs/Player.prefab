@@ -42,6 +42,7 @@ GameObject:
   - component: {fileID: 54408012428129588}
   - component: {fileID: 82065747885425990}
   - component: {fileID: 136316240461187276}
+  - component: {fileID: 114838852692458804}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -269,7 +270,7 @@ MonoBehaviour:
   m_UseHeadBob: 1
   m_HeadBob:
     HorizontalBobRange: 0.1
-    VerticalBobRange: 0.1
+    VerticalBobRange: 0.01
     Bobcurve:
       serializedVersion: 2
       m_Curve:
@@ -306,7 +307,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    VerticaltoHorizontalRatio: 2
+    VerticaltoHorizontalRatio: 1
   m_JumpBob:
     BobDuration: 0.2
     BobAmount: 0.1
@@ -316,6 +317,19 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 8bc94ec6ed537e743b481638bdcd503d, type: 3}
   m_JumpSound: {fileID: 8300000, guid: 5897aeed9b676024fbb8c694b421a861, type: 3}
   m_LandSound: {fileID: 8300000, guid: 3b09d59f4499d45428baa7a21e954296, type: 3}
+--- !u!114 &114838852692458804
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1481625859043746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 485e3a8db4e70634ab8b51d028ed2160, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentHealth: 0
+  maxHealth: 10
 --- !u!124 &124951075707387408
 Behaviour:
   m_ObjectHideFlags: 1
